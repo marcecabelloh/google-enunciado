@@ -6842,11 +6842,14 @@ body {
   background-color: white;
   width: 100%;
   text-align: center;
-  margin-top: -60px; }
+  margin-top: -30px; }
   .nav-wrapper li {
     float: none;
     display: inline-block;
     color: #424242; }
+
+.buscador {
+  margin-top: 20px; }
 
 .nav-content {
   background-color: white;
@@ -6869,9 +6872,6 @@ nav ul a {
   background-color: #4285f4;
   padding: 1px; }
 
-.page-footer {
-  background-color: white; }
-
 .contenedor-uno, .contenedor-tres {
   margin-top: 50px; }
 
@@ -6880,5 +6880,21 @@ nav ul a {
 
 .contenedor-dos__parrafo--fecha, .contenedor-tres__parrafo--plomo, .contenedor-uno__parrafo--plomo {
   color: #5f6368; }
+
+.page-footer {
+  background-color: white; }
+
+.cuadro {
+  background-color: #F1F3F4;
+  width: 100%;
+  height: 85px;
+  margin-top: 33px; }
+  .cuadro .texto-cuadro, .cuadro .enlace-cuadro {
+    margin-left: 10px; }
+
+.img-mail {
+  width: 50px;
+  margin-top: -20px;
+  margin-right: 10px; }
 
 /*# sourceMappingURL=main.css.map */

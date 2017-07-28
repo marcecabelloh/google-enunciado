@@ -1,0 +1,16 @@
+@mixin contenedoruno(){
+	margin-top:50px;
+}
+
+@mixin cuadro(){
+	background-color: #F1F3F4;
+    width: 100%;
+    height: 85px;
+    margin-top: 33px;
+}
+
+@mixin imgmail(){
+	width: 50px;
+	margin-top:-20px;
+	margin-right: 10px;
+}

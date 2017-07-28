@@ -3,11 +3,12 @@ body{
 	padding:0;
 }
 
+//seccion navbar
 .nav-wrapper{
    background-color:white;
    width: 100%;
    text-align: center;
-   margin-top:-60px;
+   margin-top:-30px;
     li {
      float: none;
      display: inline-block;
@@ -15,12 +16,16 @@ body{
     }
  }
 
+.buscador{
+	margin-top:20px;
+}
+
 .nav-content{
  	background-color:white;
  	padding-bottom:10px;
  }
 
-	 .nav-content__img--logo{
+.nav-content__img--logo{
  	width: 200px;	
   }
 
@@ -37,17 +42,16 @@ nav ul a{
 	color:$gris-titulos;
 }
 
+
+
+//contenedores
 .contenedor-linea__linea{
 	background-color: $color-azul;
 	padding:1px;
 }
 
-.page-footer{
-	background-color:white;
-}
-
 .contenedor-uno{
-	margin-top:50px;
+	@include contenedoruno;
 }
 
 .contenedor-tres{
@@ -68,5 +72,27 @@ nav ul a{
 
 .contenedor-uno__parrafo--plomo{
 	@extend .contenedor-dos__parrafo--fecha;
+}
+
+
+.page-footer{
+	background-color:white;
+}
+
+//cuadro con texto en contenedor-dos
+
+.cuadro{
+	@include cuadro();
+	.texto-cuadro{
+	margin-left:10px;
+	}
+}
+
+.enlace-cuadro{
+	@extend .texto-cuadro;
+}
+
+.img-mail{
+	@include imgmail();
 }
 
