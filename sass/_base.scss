@@ -4,8 +4,9 @@ body{
 }
 
 //seccion navbar
+
 .nav-wrapper{
-   background-color:white;
+   background-color:$color-blanco;
    width: 100%;
    text-align: center;
    margin-top:-30px;
@@ -21,7 +22,7 @@ body{
 }
 
 .nav-content{
- 	background-color:white;
+ 	background-color:$color-blanco;
  	padding-bottom:10px;
  }
 
@@ -76,7 +77,7 @@ nav ul a{
 
 
 .page-footer{
-	background-color:white;
+	background-color:$color-blanco;
 }
 
 //cuadro con texto en contenedor-dos
