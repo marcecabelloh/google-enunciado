@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6834,19 +6835,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/ }
 
+/*Rojo Oscuro T├¡tulos*/
+/*Rojo claro fecha*/
+/*azul claro texto*/
+/*verde*/
 body {
   margin: 0;
   padding: 0; }
 
-.nav-wrapper {
+.nav-extended .nav-wrapper {
   background-color: white;
   width: 100%;
   text-align: center;
   margin-top: -30px; }
-  .nav-wrapper li {
+  .nav-extended .nav-wrapper li {
     float: none;
     display: inline-block;
     color: #424242; }
+
+nav ul a {
+  color: #424242; }
 
 .buscador {
   margin-top: 20px; }
@@ -6854,19 +6862,15 @@ body {
 .nav-content {
   background-color: white;
   padding-bottom: 10px; }
-
-.nav-content__img--logo {
-  width: 200px; }
-
-.nav-title {
-  color: #424242;
-  margin-top: 19px; }
+  .nav-content .nav-content__img--logo {
+    width: 200px; }
 
 .nav-content .nav-content__img--logo {
   margin-left: 510px; }
 
-nav ul a {
-  color: #424242; }
+.nav-title {
+  color: #424242;
+  margin-top: 19px; }
 
 .contenedor-linea__linea {
   background-color: #4285f4;
@@ -6875,26 +6879,26 @@ nav ul a {
 .contenedor-uno, .contenedor-tres {
   margin-top: 50px; }
 
-.titulos {
-  color: #424242; }
-
-.contenedor-dos__parrafo--fecha, .contenedor-tres__parrafo--plomo, .contenedor-uno__parrafo--plomo {
+.contenedor-dos .contenedor-dos__parrafo--fecha, .contenedor-dos .contenedor-uno .contenedor-uno__parrafo--plomo, .contenedor-uno .contenedor-dos .contenedor-uno__parrafo--plomo, .contenedor-dos .contenedor-tres .contenedor-uno__parrafo--plomo, .contenedor-tres .contenedor-dos .contenedor-uno__parrafo--plomo, .contenedor-dos .contenedor-tres .contenedor-tres__parrafo--plomo, .contenedor-tres .contenedor-dos .contenedor-tres__parrafo--plomo {
   color: #5f6368; }
-
-.page-footer {
-  background-color: white; }
-
-.cuadro {
-  background-color: #F1F3F4;
-  width: 100%;
-  height: 85px;
-  margin-top: 33px; }
-  .cuadro .texto-cuadro, .cuadro .enlace-cuadro {
-    margin-left: 10px; }
 
 .img-mail {
   width: 50px;
   margin-top: -20px;
   margin-right: 10px; }
+
+.contenedor-dos .cuadro {
+  background-color: #F1F3F4;
+  width: 100%;
+  height: 85px;
+  margin-top: 33px; }
+  .contenedor-dos .cuadro .texto-cuadro, .contenedor-dos .cuadro .texto-cuadro .enlace-cuadro {
+    margin-left: 10px; }
+
+.titulos {
+  color: #424242; }
+
+.page-footer {
+  background-color: white; }
 
 /*# sourceMappingURL=main.css.map */

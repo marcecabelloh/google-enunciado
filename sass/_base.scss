@@ -4,8 +4,8 @@ body{
 }
 
 //seccion navbar
-
-.nav-wrapper{
+.nav-extended{
+	.nav-wrapper{
    background-color:$color-blanco;
    width: 100%;
    text-align: center;
@@ -14,8 +14,14 @@ body{
      float: none;
      display: inline-block;
      color:$gris-titulos;
-    }
- }
+    	}
+ 	}
+}
+
+
+nav ul a{
+	color:$gris-titulos;
+}
 
 .buscador{
 	margin-top:20px;
@@ -24,28 +30,22 @@ body{
 .nav-content{
  	background-color:$color-blanco;
  	padding-bottom:10px;
- }
+ 		.nav-content__img--logo{
+ 		width: 200px;	
+  	}
 
-.nav-content__img--logo{
- 	width: 200px;	
-  }
-
-.nav-title{
- 	color:$gris-titulos;
- 	margin-top:19px;
  }
 
 .nav-content .nav-content__img--logo{
 	margin-left:510px;
 }
 
-nav ul a{
-	color:$gris-titulos;
-}
+.nav-title{
+ 	color:$gris-titulos;
+ 	margin-top:19px;
+ }
 
 
-
-//contenedores
 .contenedor-linea__linea{
 	background-color: $color-azul;
 	padding:1px;
@@ -53,26 +53,42 @@ nav ul a{
 
 .contenedor-uno{
 	@include contenedoruno;
+		.contenedor-uno__parrafo--plomo{
+		@extend .contenedor-dos__parrafo--fecha;
+	}
+}
+
+.contenedor-dos{
+	.contenedor-dos__parrafo--fecha{
+	color:$gris-claro-fecha;
+	}
+}
+
+.img-mail{
+	@include imgmail();
+}
+
+.contenedor-dos{
+	.cuadro{
+	@include cuadro();
+		.texto-cuadro{
+		margin-left:10px;
+			.enlace-cuadro{
+			@extend .texto-cuadro;
+			}
+		}
+	}
 }
 
 .contenedor-tres{
 	@extend .contenedor-uno;
+		.contenedor-tres__parrafo--plomo{
+		@extend .contenedor-dos__parrafo--fecha;
+	}
 }
 
 .titulos{
 	color:$gris-titulos;
-}
-
-.contenedor-dos__parrafo--fecha{
-	color:$gris-claro-fecha;
-}
-
-.contenedor-tres__parrafo--plomo{
-	@extend .contenedor-dos__parrafo--fecha;
-}
-
-.contenedor-uno__parrafo--plomo{
-	@extend .contenedor-dos__parrafo--fecha;
 }
 
 
@@ -80,20 +96,5 @@ nav ul a{
 	background-color:$color-blanco;
 }
 
-//cuadro con texto en contenedor-dos
 
-.cuadro{
-	@include cuadro();
-	.texto-cuadro{
-	margin-left:10px;
-	}
-}
-
-.enlace-cuadro{
-	@extend .texto-cuadro;
-}
-
-.img-mail{
-	@include imgmail();
-}
 
